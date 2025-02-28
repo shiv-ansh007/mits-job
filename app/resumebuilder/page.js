@@ -1,10 +1,9 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";  // Ensure useRouter is properly imported
-import { db, storage } from "@/firebase"; // Ensure Firebase is configured
+import { db } from "../../lib/firebase"; // Ensure Firebase is configured
 import { collection, addDoc } from "firebase/firestore";
 import jsPDF from "jspdf";
-import { ref, getDownloadURL, uploadBytes } from "firebase/storage";
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -20,6 +19,12 @@ const ResumeBuilder = () => {
     education: [{ institution: "", degree: "", year: "" }],
     skills: "",
   });
+  const [showProfile, setShowProfile] = useState(false);
+
+  const onClick = () => {
+    setShowProfile((prev) => !prev);
+  };
+
 
   const router = useRouter();  // Fix: Declare router using useRouter hook
 
@@ -87,7 +92,8 @@ const ResumeBuilder = () => {
 
   return (
     <>
-      <Navbar />
+        {showProfile ? <Profile setShowProfile={setShowProfile} /> : null}
+               <Navbar showProfile={showProfile} setShowProfile={setShowProfile} />
       <div className="p-10 mt-10 max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-4">Resume Builder</h1>
 
@@ -179,7 +185,9 @@ const ResumeBuilder = () => {
             <>
               <button onClick={handleDownload} className="bg-blue-600 text-white px-4 py-2 rounded">Download PDF</button>
               <button onClick={handleSubmit} className="bg-yellow-500 text-black px-4 py-2 rounded-lg">Save Resume</button>
+              <Footer/>
             </>
+
           )}
         </div>
       </div>

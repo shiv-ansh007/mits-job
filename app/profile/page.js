@@ -1,11 +1,11 @@
-"use client";
+/* "use client";
 import { useState, useEffect } from "react";
 import { userId } from "firebase/auth";
 import { getAuth, updateProfile } from "firebase/auth";
 
 import PropTypes from "prop-types";
 
-import { db } from "../firebase"; // Import Firestore
+import { db } from "../../lib/firebase"; // Import Firestore
 import { doc, getDoc, setDoc } from "firebase/firestore";
 
 const Profile = ({ setShowProfile, onEdit }) => {
@@ -154,7 +154,7 @@ const Profile = ({ setShowProfile, onEdit }) => {
           ) : (
             <>
               <h1>Profile</h1>
-              {/* Display user information */}
+             
               <button onClick={handleEdit}>Edit Profile</button>
             </>
           )}
@@ -169,3 +169,4 @@ Profile.propTypes = {
 };
 
 export default Profile;
+ */
