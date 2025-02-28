@@ -66,6 +66,7 @@ const EditProfile = () => {
         experience: experience,
       });
       alert("Profile updated successfully!");
+      console.log('gekk')
     }
   };
 
