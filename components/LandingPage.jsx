@@ -9,7 +9,6 @@ import {
 } from "firebase/auth";
 import AuthModal from "../components/AuthModal";
 
-import { motion } from "framer-motion";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Link from "next/link";
@@ -135,9 +134,8 @@ if(user)
     <Tabs>
       <TabList>
         <Tab onClick={() => handleTabClick("Why Choose Us?")}>
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
+          <div
+            
             className={`px-4 py-2 cursor-pointer rounded-md ${
               activeTab === "Why Choose Us?"
                 ? "bg-yellow-500"
@@ -146,19 +144,18 @@ if(user)
             onClick={() => handleTabClick("Why Choose Us?")}
           >
             Why Choose Us?
-          </motion.div>
+          </div>
         </Tab>
         <Tab>
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.09 }}
+          <div
+            
             className={`px-4 py-2 cursor-pointer rounded-md ${
               activeTab === "How to Apply" ? "bg-yellow-500" : "bg-transparent"
             }`} // Dynamically change color
             onClick={() => handleTabClick("How to Apply")}
           >
             How to Apply
-          </motion.div>
+          </div>
         </Tab>
       </TabList>
 
@@ -274,11 +271,9 @@ if(user)
             )}
           </div>
         </div>
-        <motion.div
+        <div
           className="w-2/3 p-8 text-center  bg-white rounded-l-2xl shadow-2xl"
-          animate={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
+           
         >
           <h2 className="text-4xl p-1 font-bold text-yellow-600">
             " राजस्थान सरकार द्वारा इंटर्नशिप और नौकरियों को बढ़ावा देना "
@@ -295,7 +290,7 @@ if(user)
             - सरकार ने AI आधारित परियोजनाओं की शुरुआत की है, जो युवाओं को
             वास्तविक दुनिया की समस्याओं को हल करने का अवसर प्रदान करती हैं।
           </p>
-        </motion.div>
+        </div>
       </header>
 
       <section className="p-10 text-center">
