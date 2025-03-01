@@ -1,1 +1,16 @@
-{"/_not-found/page":"/_not-found","/favicon.ico/route":"/favicon.ico","/changepassword/page":"/changepassword","/editprofile/page":"/editprofile","/helpcenter/page":"/helpcenter","/internships/page":"/internships","/landing/page":"/landing","/jobs/page":"/jobs","/manageaccount/page":"/manageaccount","/mentor/page":"/mentor","/page":"/","/profile/page":"/profile","/resumebuilder/page":"/resumebuilder","/safetytips/page":"/safetytips"}
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/editprofile/page": "/editprofile",
+  "/changepassword/page": "/changepassword",
+  "/helpcenter/page": "/helpcenter",
+  "/internships/page": "/internships",
+  "/jobs/page": "/jobs",
+  "/manageaccount/page": "/manageaccount",
+  "/mentor/page": "/mentor",
+  "/resumebuilder/page": "/resumebuilder",
+  "/profile/page": "/profile",
+  "/landing/page": "/landing",
+  "/safetytips/page": "/safetytips",
+  "/page": "/"
+}

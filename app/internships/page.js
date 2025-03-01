@@ -43,9 +43,9 @@ const InternshipFilters = () => {
   
 
   return (
-    <div className="flex">
+    <div className="flex px-10">
       {/* Left Sidebar (Filters) */}
-      <div className="w-1/4 p-4 bg-gray-100">
+      <div className="w-1/4 px-4 pt-10 py-2 p-4 bg-yellow-100">
         <h2 className="text-lg font-bold mb-4">Filters</h2>
 
         <label className="block">Profile Role</label>
